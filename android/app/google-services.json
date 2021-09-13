@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "681210800338",
+    "project_id": "heaven-riders-india-4a824",
+    "storage_bucket": "heaven-riders-india-4a824.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681210800338:android:42583bb909c32946d5e50b",
+        "android_client_info": {
+          "package_name": "com.heaven_riders_india"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681210800338-mkevoetmt51v4ok83vcjs1sakd754dsh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaC7bDTT6hhfQ34tOheHTraGsLi5xWiu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681210800338-mkevoetmt51v4ok83vcjs1sakd754dsh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "681210800338-pgb7crftb307bdp6jto4r7ppvvorj02q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.company.awesomeapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
