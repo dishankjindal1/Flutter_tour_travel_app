@@ -12,4 +12,5 @@ var drawerMenu = [
   DrawerMenu(Icon(Icons.home), 'Home', 'app'),
   DrawerMenu(Icon(Icons.phone), 'Contact', 'contact'),
   DrawerMenu(Icon(Icons.add), 'Add Page', 'newPage'),
+  DrawerMenu(Icon(Icons.visibility), 'Privacy Policy', 'privacyPolicy'),
 ];

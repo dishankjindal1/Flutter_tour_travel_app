@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:heaven_riders_india/models/drawer_menu.dart';
 import 'package:heaven_riders_india/views/drawer/footer_drawer.dart';
 import 'package:heaven_riders_india/views/drawer/header_drawer.dart';
@@ -30,9 +31,17 @@ class AppDrawer extends StatelessWidget {
                 child: ListView.builder(
                     itemCount: drawerMenu.length,
                     itemBuilder: (context, index) {
-                      return ListTile(
-                        leading: drawerMenu[index].leadingIcon,
-                        title: Text(drawerMenu[index].title),
+                      return GestureDetector(
+                        onTap: () async {
+                          String _markupSource = await loadAsset(context, 'assets/privacy_policy.md');
+                          Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) =>
+                              Scaffold(body: SafeArea(child: Markdown(data: _markupSource)),),
+                          ));
+                        },
+                        child: ListTile(
+                          leading: drawerMenu[index].leadingIcon,
+                          title: Text(drawerMenu[index].title),
+                        ),
                       );
                     }),
               ),
@@ -50,4 +59,8 @@ class AppDrawer extends StatelessWidget {
       ),
     );
   }
+}
+
+Future<String> loadAsset(BuildContext context, String value) async {
+  return await DefaultAssetBundle.of(context).loadString(value);
 }

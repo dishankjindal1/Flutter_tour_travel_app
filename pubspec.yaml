@@ -17,6 +17,7 @@ dependencies:
   image_picker: any
   camera_camera: any
   get: any
+  flutter_markdown: ^0.6.6
 
 
 dev_dependencies:
