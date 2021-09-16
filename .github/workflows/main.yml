@@ -42,7 +42,6 @@ jobs:
       - name: Run a flutter script
         run: |
           flutter pub get
-          flutter test
           flutter build appbundle
           
       - name: Upload a Build Artifact
